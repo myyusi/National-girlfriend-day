@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Girlfriend Day, Ionam ️💍💕💋</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    .page {
+      display: none;
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(#fff4f9, #ffd7ef);
+      position: relative;
+      padding: 20px;
+      text-align: center;
+    }
+    .active {
+      display: block;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #e91e63;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 10px 0 20px;
+      color: #555;
+    }
+    .nextBtn {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
+    .gif {
+      width: 150px;
+      margin: 10px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="page active">
+    <h1>Happy National Girlfriend Day, love 💕</h1>
+    <p>To the one who holds my soul, Iona
+    my love, my calm, my forever person.</p>
+    <img class="gif" src="https://media.giphy.com/media/cKKyJzmHYLy4o1eNav/giphy.gif" />
+    <button class="nextBtn">Next</button>
+  </div>  <div class="page">
+    <h1>My heart speaks your name</h1>
+    <p>Every beat of my heart whispers, Iona as if the universe carved your name into my soul.</p>
+    <img class="gif" src="https://media.giphy.com/media/VgNk3XyaEibn5ggYQs/giphy.gif" />
+    <img class="gif" src="https://media.giphy.com/media/wMlcT3exSxYAcbkby6/giphy.gif" />
+    <button class="nextBtn">Next</button>
+  </div>  <div class="page">
+    <h1>You feel like home</h1>
+    <p>Your voice is peace. Your texts are comfort. Your love is where I belong where I want to stay, forever.</p>
+    <img class="gif" src="https://media.giphy.com/media/j0anZKxB22BjC4Kjov/giphy.gif" />
+    <img class="gif" src="https://media.giphy.com/media/cOuYgdZJgjJwUTPWKl/giphy.gif" />
+    <img class="gif" src="https://media.giphy.com/media/fwW11c8nPJ1UjkcNU3/giphy.gif" style="position: absolute; bottom: 90px; left: 50%; transform: translateX(-50%);" />
+    <button class="nextBtn">Next</button>
+  </div>  <div class="page">
+    <h1>I would choose you, always</h1>
+    <p>If I could relive a thousand lifetimes, I'd fall for you in every one. Iona, you're my favorite decision.</p>
+    <img class="gif" src="https://media.giphy.com/media/q4YtFJ9Inq3UQDlPEF/giphy.gif" style="position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%);" />
+    <button class="nextBtn">Next</button>
+  </div>  <div class="page">
+    <h1>We’re more than love</h1>
+    <p>You're my peace after storm. My laughter after tears. Not just my girl, but my forever partner, my wife in every way but name and love.</p>
+    <img class="gif" src="https://media.giphy.com/media/VgNk3XyaEibn5ggYQs/giphy.gif" />
+    <button class="nextBtn">Next</button>
+  </div>  <div class="page">
+    <h1>I love you endlessly, Iona 💕💌</h1>
+    <p>You're not just a part of my story, you're the ink. You're not just my girlfriend... you're my heart’s favorite person.</p>
+    <img class="gif" src="https://media.giphy.com/media/cKKyJzmHYLy4o1eNav/giphy.gif" />
+    <button class="nextBtn">Start Again</button>
+  </div>  <script>
+    const pages = document.querySelectorAll('.page');
+    const buttons = document.querySelectorAll('.nextBtn');
+
+    let current = 0;
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        pages[current].classList.remove('active');
+        current = (current + 1) % pages.length;
+        pages[current].classList.add('active');
+      });
+    });
+  </script></body>
+</html>
